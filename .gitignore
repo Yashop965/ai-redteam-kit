@@ -1,0 +1,20 @@
+# venvs & caches
+.venv/
+__pycache__/
+*.pyc
+
+# heavy intermediates (obfuscated parquets live outside the repo; see README data section)
+data/*.parquet
+
+# local-only artifacts: generated outputs + decrypted benchmark data + local candidate bank
+out/
+data/browsecomp_plus_decrypted.jsonl
+data/bcp_shortlist.json
+candidates_full.json
+
+# run logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

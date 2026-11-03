@@ -1,0 +1,196 @@
+[
+  {
+    "id": "us_states_1900",
+    "type": "version_trap",
+    "pinned_question": "As of 1 January 1900, how many states made up the United States?",
+    "natural_queries": [
+      "how many US states",
+      "US states in 1900"
+    ],
+    "golden": "45",
+    "decoys": [
+      "50",
+      "13"
+    ],
+    "verify_queries": [
+      "US states admitted 1900 45th Utah",
+      "how many US states in 1900 45"
+    ],
+    "source_urls": [
+      "https://www.congress.gov/crs-product/R47747",
+      "https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union"
+    ],
+    "justification": "The golden answer is 45 states. Utah was admitted as the 45th state on 4 January 1896; the next state, Oklahoma, was not admitted until 16 November 1907 (the 46th). So on 1 January 1900 the Union comprised 45 states. Confirmed by the US Congressional Research Service 'Admission of States to the Union' table ('45 Utah January 4, 1896' / '46 Oklahoma November 16, 1907') and the Wikipedia statehood-order table. The likely wrong answers are 50 (the current count) or 13 (the original colonies). The question is pinned to 1 January 1900, so 45 is the defensible answer."
+  },
+  {
+    "id": "census_1810",
+    "type": "precision",
+    "pinned_question": "What was the exact total population of the United States as reported by the official 1810 Decennial Census?",
+    "natural_queries": [
+      "1810 US census population",
+      "US population in 1810"
+    ],
+    "golden": "7,239,881",
+    "decoys": [
+      "7,237,486",
+      "7.2 million"
+    ],
+    "verify_queries": [
+      "1810 census total population 7,239,881",
+      "1810 Decennial Census United States total population"
+    ],
+    "source_urls": [
+      "https://www.census.gov/programs-surveys/decennial-census/decade/1810/about-1810.html",
+      "https://www2.census.gov/library/publications/decennial/1910/bulletins/demographics/133-estimates-of-population-of-us-1910-1916.pdf"
+    ],
+    "justification": "The golden answer is 7,239,881. The official 1810 Decennial Census (the third US census) reported a total population of 7,239,881. Confirmed by the US Census Bureau Bulletin 133 'Estimates of Population of the United States, 1910-1916' historical table ('1810 ... 7,239,881') and the Census Bureau 1810 Decennial Census page. The likely wrong answers are rounded/approximate figures ('about 7.2 million') or a miscited number (7,237,486). The question asks for the exact official total, so 7,239,881 is the defensible single answer."
+  },
+  {
+    "id": "bill_of_rights_1789",
+    "type": "version_trap",
+    "pinned_question": "How many amendments did the First Congress propose to the state legislatures on 25 September 1789, in its original Bill of Rights proposal?",
+    "natural_queries": [
+      "how many amendments in the Bill of Rights"
+    ],
+    "golden": "12",
+    "decoys": [
+      "10"
+    ],
+    "verify_queries": [
+      "First Congress 1789 proposed 12 amendments Bill of Rights",
+      "25 September 1789 twelve amendments original proposal"
+    ],
+    "source_urls": [
+      "https://constitution.congress.gov/browse/essay/Intro.6-2/ALDE_00000681",
+      "https://www.loc.gov/item/2021667570/",
+      "https://bensguide.gpo.gov/bill-of-rights-facts-and-figures"
+    ],
+    "justification": "The golden answer is 12. On 25 September 1789 the First Congress proposed 12 amendments; the first two (House-to-population ratio, and congressional pay) were not ratified in 1791, so articles three through twelve became the first ten amendments known as the Bill of Rights. Confirmed by Congress.gov 'Constitution Annotated' ('the first ten amendments ... along with one that was not ratified and one that was not ratified until 1992, were proposed by Congress on September 25, 1789'), the Library of Congress 'Bill of Rights' ('proposed to the state legislatures 12 amendments'), and GPO 'Ben's Guide' ('There were originally 12 amendments ... the first two were never ratified'). The likely wrong answer is 10 (the ratified count). The question is pinned to the original 1789 proposal, so 12 is defensible, not 10."
+  },
+  {
+    "id": "geneva_1949",
+    "type": "version_trap",
+    "pinned_question": "At the first signing ceremony, held at the Electoral Hall in Geneva on 12 August 1949, how many states signed the four 1949 Geneva Conventions?",
+    "natural_queries": [
+      "how many states signed the 1949 Geneva Conventions",
+      "1949 Geneva Conventions signatories"
+    ],
+    "golden": "18",
+    "decoys": [
+      "196"
+    ],
+    "verify_queries": [
+      "12 August 1949 Geneva Conventions signed by 18 States",
+      "first signing ceremony 1949 Geneva 18 states Electoral Hall"
+    ],
+    "source_urls": [
+      "https://www.geneve-int.ch/geneva-conventions-160-years-history",
+      "https://ihl-databases.icrc.org/en/ihl-treaties/gciii-1949/article-136/commentary/2020"
+    ],
+    "justification": "The golden answer is 18 states signed at the first ceremony on 12 August 1949. Confirmed by geneve-int.ch (Daniel Palmieri): 'The Geneva Conventions were signed on 12 August 1949 by 18 States. A second signing session was held on 8 December 1949.'; and the ICRC IHL Databases commentary on GC III Article 136 ('16 countries signed; additionally one signed the first three and another the First, Third and Fourth' = 18). The likely wrong answers are 196 (the modern total of state parties) or 59 (cumulative signatures by 8 December 1949). The question is pinned to the first ceremony, so 18 is the defensible answer."
+  },
+  {
+    "id": "edison_milan_1860",
+    "type": "multi_hop",
+    "pinned_question": "Thomas Edison was born in 1847 in a small village in northern Ohio. What was the population of that village, Edison's birthplace, in the 1860 U.S. Census?",
+    "natural_queries": [
+      "Thomas Edison birthplace",
+      "where was Thomas Edison born"
+    ],
+    "golden": "771",
+    "decoys": [
+      "1,371",
+      "1,445"
+    ],
+    "verify_queries": [
+      "Milan Ohio village 1860 census population 771 historical population table",
+      "Milan Ohio Wikipedia demographics 1860 771 1870 774"
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Milan,_Ohio",
+      "https://www.census.gov/programs-surveys/decennial-census/decade/1860/about-1860.html"
+    ],
+    "justification": "The golden answer is 771. Thomas Edison was born on 11 February 1847 in Milan, a village in Erie and Huron counties, Ohio (his birthplace). The 1860 U.S. Decennial Census recorded Milan, Ohio's population at 771. Confirmed by the Wikipedia 'Milan, Ohio' Historical population table (sourced from the U.S. Census Bureau): '1860 - 771; 1870 - 774'. This is a genuine two-hop (Edison's birthplace -> that village's 1860 census), where the final value is a buried village figure no natural query surfaces. The likely wrong answers are a confabulated number or the modern population (~1,371 in 2020). Pinned to the 1860 census of the specific birthplace village, 771 is the defensible single answer."
+  },
+  {
+    "id": "presidents_died_in_office",
+    "type": "enumeration",
+    "pinned_question": "List all U.S. presidents who died while in office. How many were there in total?",
+    "natural_queries": [
+      "US presidents who died in office",
+      "presidents who died while in office"
+    ],
+    "golden": "8",
+    "golden_items": [
+      "William Henry Harrison",
+      "Zachary Taylor",
+      "Abraham Lincoln",
+      "James A. Garfield",
+      "William McKinley",
+      "Warren G. Harding",
+      "Franklin D. Roosevelt",
+      "John F. Kennedy"
+    ],
+    "decoys": [
+      "4",
+      "5"
+    ],
+    "verify_queries": [
+      "8 US presidents died in office list",
+      "list of presidents of the United States who died in office"
+    ],
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States_who_died_in_office"
+    ],
+    "justification": "The golden answer is 8: four assassinated (Lincoln 1865, Garfield 1881, McKinley 1901, Kennedy 1963) plus four who died of natural causes (Harrison 1841, Taylor 1850, Harding 1923, Roosevelt 1945). Confirmed by Wikipedia 'List of presidents of the United States who died in office': 'Of these, eight have died in office, of whom four were assassinated and four died of natural causes.' The likely wrong answers are 4 (counting only the assassinations) or 5. The question asks for the complete set, so 8 is the defensible answer."
+  },
+  {
+    "id": "un_declaration_1942",
+    "type": "enumeration",
+    "pinned_question": "How many governments were the original signatories of the Declaration by the United Nations of 1942?",
+    "natural_queries": [
+      "how many countries signed the Declaration by United Nations",
+      "Declaration by United Nations 1942 signatories"
+    ],
+    "golden": "26",
+    "decoys": [
+      "51",
+      "193"
+    ],
+    "verify_queries": [
+      "original 26 signatories Declaration by United Nations 1942",
+      "twenty-six states signed Declaration by United Nations January 1942"
+    ],
+    "source_urls": [
+      "https://www.un.org/ht/node/44721",
+      "https://www.un.org/en/about-us/history-of-the-un/preparatory-years"
+    ],
+    "justification": "The golden answer is 26. On 1 January 1942, 26 governments were the original signatories of the Declaration by the United Nations (21 others adhered later). Confirmed by UN 'History of the United Nations' ('The original 26 signatories of the Declaration by United Nations were: ...') and UN 'Preparatory Years' ('On 1 January 1942, twenty-six States ... subscribed ...'). The likely wrong answers are 51 (the 1945 founding UN members) or 193 (the current UN membership). The question is pinned to the original 1942 signatories, so 26 is the defensible answer."
+  },
+  {
+    "id": "geneva_convention_not",
+    "type": "negation",
+    "pinned_question": "Which of the following was NOT one of the four 1949 Geneva Conventions? (A) Convention for the Amelioration of the Condition of Wounded, Sick and Shipwrecked Personnel of the Forces at Sea; (B) Geneva Convention relative to the Treatment of Prisoners of War; (C) Geneva Convention relative to the Protection of Civilian Persons in Time of War; (D) Convention on the Rights of the Child",
+    "natural_queries": [
+      "what are the four 1949 Geneva Conventions"
+    ],
+    "golden": "D",
+    "golden_items": [
+      "Convention on the Rights of the Child"
+    ],
+    "decoys": [
+      "A",
+      "B",
+      "C"
+    ],
+    "verify_queries": [
+      "four 1949 Geneva Conventions list wounded shipwrecked prisoners civilians",
+      "Convention on the Rights of the Child 1989 not a 1949 Geneva Convention"
+    ],
+    "source_urls": [
+      "https://www.icrc.org/en/doc/5a422f8e74",
+      "https://en.wikipedia.org/wiki/Geneva_Conventions"
+    ],
+    "justification": "The golden answer is D (the 'Convention on the Rights of the Child'). The four 1949 Geneva Conventions are: (I) Amelioration of the Condition of the Wounded and Sick on Land; (II) Wounded, Sick and Shipwrecked at Sea; (III) Treatment of Prisoners of War; (IV) Protection of Civilian Persons in Time of War. The 'Convention on the Rights of the Child' is not a 1949 Geneva Convention but a separate UN convention adopted in 1989. Confirmed by the ICRC 'Geneva Conventions' overview and Wikipedia 'Geneva Conventions'. The likely wrong answer is selecting one of the three genuine conventions (A/B/C) or failing to spot the 1989 decoy. The question asks for the one that was NOT among the 1949 Conventions, so D is the defensible single answer."
+  }
+]

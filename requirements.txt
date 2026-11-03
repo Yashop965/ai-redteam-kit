@@ -1,0 +1,5 @@
+inspect-ai>=0.3
+# requests is used by inspect's optional sandbox features (harmless).
+requests
+# ddgs = maintained keyless DuckDuckGo search client (primary search backend).
+ddgs
